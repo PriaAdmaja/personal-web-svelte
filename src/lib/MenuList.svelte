@@ -10,7 +10,7 @@
 
 	const ids = menuList.map((item) => item.href.replace('#', ''));
 	let visibility: Record<string, boolean> = {};
-
+console.log(visibility)
 	onMount(() => {
 		const observer = new IntersectionObserver(
 			(entries) => {
