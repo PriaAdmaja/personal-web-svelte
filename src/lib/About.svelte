@@ -3,6 +3,9 @@
 </script>
 
 <section id="about">
+	<div class="sticky top-0 z-30 w-screen lg:hidden">
+		<P class='font-bold text'>About</P>
+	</div>
 	<P class="text-base text-pretty"
 		>I'm a frontend developer with a strong foundation in JavaScript, TypeScript, React.js, and
 		Next.js, and additional experience with React Native, Node.js, Express.js, and PostgreSQL.
