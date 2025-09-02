@@ -17,6 +17,13 @@
 			description: '',
 			location: 'Malang, East Java, Indonesia',
 			tech: ['Next JS', 'Tailwind', 'Material UI', 'React Hook Form', 'Tanstack React Query']
+		},
+		{
+			companyName: 'PT. Havedev Cipta Teknologi',
+			date: 'November 2023 - October 2024',
+			description: '',
+			location: 'Blitar, East Java, Indonesia',
+			tech: ['Next JS', 'Tailwind', 'Ant Design', 'React Hook Form', 'Tanstack React Query']
 		}
 	];
 </script>
@@ -26,16 +33,15 @@
 		<TimelineItem title={companyName} {date}>
 			{#snippet orientationSlot()}
 				<span
-					class="bg-primary-200 dark:bg-primary-900 absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full ring-8 ring-white dark:ring-gray-900"
+					class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-200 ring-8 ring-white dark:bg-primary-900 dark:ring-gray-900"
 				>
-					<CalendarWeekSolid class="text-primary-600 dark:text-primary-400 h-4 w-4" />
+					<CalendarWeekSolid class="h-4 w-4 text-primary-600 dark:text-primary-400" />
 				</span>
 			{/snippet}
 			<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-				Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar,
-				and pre-order E-commerce & Marketing pages.
+				{description}
 			</p>
-			<div class="flex items-center gap-2 flex-wrap">
+			<div class="flex flex-wrap items-center gap-2">
 				{#each tech as techItem}
 					<Badge rounded color="gray" large>{techItem}</Badge>
 				{/each}
