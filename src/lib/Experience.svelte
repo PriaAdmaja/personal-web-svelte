@@ -35,7 +35,7 @@
 				Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar,
 				and pre-order E-commerce & Marketing pages.
 			</p>
-			<div class="flex items-center gap-2">
+			<div class="flex items-center gap-2 flex-wrap">
 				{#each tech as techItem}
 					<Badge rounded color="gray" large>{techItem}</Badge>
 				{/each}

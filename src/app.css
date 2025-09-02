@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin 'flowbite/plugin';
@@ -28,7 +28,7 @@
   --color-secondary-800: #075985;
   --color-secondary-900: #0c4a6e;
 
-  --font-roboto: "Roboto", sans-serif; 
+  --font-work-sans: "Work Sans", sans-serif;
 }
 
 @source "../node_modules/flowbite-svelte/dist";

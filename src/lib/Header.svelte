@@ -1,16 +1,14 @@
 <script>
-	import { Heading, P } from "flowbite-svelte";
-	import MenuList from "./MenuList.svelte";
-	import { GithubSolid, LinkedinSolid, WhatsappSolid } from "flowbite-svelte-icons";
-
+	import { Heading, P } from 'flowbite-svelte';
+	import MenuList from './MenuList.svelte';
+	import { GithubSolid, LinkedinSolid, WhatsappSolid } from 'flowbite-svelte-icons';
 </script>
+
 <header
 	class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24"
 >
 	<div>
-		<Heading tag="h1" class="text-4xl  tracking-tight"
-			><a href="/">Hi, I'm <span class="font-bold">Pria Admaja</span></a></Heading
-		>
+		<Heading tag="h1" class="text-4xl tracking-tight"><a href="/">Pria Admaja</a></Heading>
 
 		<P class="mt-4 max-w-xs leading-normal text-pretty"
 			>Frontend Developer from Malang, Indonesia.</P
