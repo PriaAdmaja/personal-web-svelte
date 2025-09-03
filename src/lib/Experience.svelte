@@ -28,14 +28,14 @@
 	];
 </script>
 
-<Timeline order="vertical">
+<Timeline order="vertical" id="experience" class='ml-3'>
 	{#each timeline as { companyName, date, description, tech }}
 		<TimelineItem title={companyName} {date}>
 			{#snippet orientationSlot()}
 				<span
-					class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-200 ring-8 ring-white dark:bg-primary-900 dark:ring-gray-900"
+					class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-zinc-200 ring-white"
 				>
-					<CalendarWeekSolid class="h-4 w-4 text-primary-600 dark:text-primary-400" />
+					<CalendarWeekSolid class="h-4 w-4 " />
 				</span>
 			{/snippet}
 			<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">

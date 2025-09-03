@@ -17,6 +17,14 @@
   --color-primary-800: #cc4522;
   --color-primary-900: #a5371b;
 
+  --color-text-light: #444452;
+  --color-text-dark: #e7e7e7;
+
+  --color-bg-light: #171c28;
+  --color-bg-dark: #171c28;
+
+  --color-accent: #007bff;
+
   --color-secondary-50: #f0f9ff;
   --color-secondary-100: #e0f2fe;
   --color-secondary-200: #bae6fd;

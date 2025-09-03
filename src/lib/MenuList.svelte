@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { P } from 'flowbite-svelte';
+	import { afterNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 
 	const menuList = [
@@ -9,34 +10,38 @@
 	];
 
 	const ids = menuList.map((item) => item.href.replace('#', ''));
-	let visibility: Record<string, boolean> = {};
-console.log(visibility)
+
+	function scrollToHash() {
+		const { hash } = window.location;
+
+		if (hash === '#about') {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			return;
+		}
+
+		if (hash) {
+			const el = document.querySelector(hash);
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	}
+
 	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					visibility = {
-						...visibility,
-						[entry.target.id]: entry.isIntersecting
-					};
-				});
-			},
-			{ threshold: 0.5 }
-		);
+		// Scroll if hash exists on first render
+		scrollToHash();
 
-		ids.forEach((id) => {
-			const el = document.getElementById(id);
-			if (el) observer.observe(el);
+		// Also scroll after client-side navigations
+		afterNavigate(() => {
+			scrollToHash();
 		});
-
-		return () => observer.disconnect();
 	});
 </script>
 
 <ul class="mt-14 hidden flex-col gap-5 lg:flex">
 	{#each menuList as { href, label }}
 		<li>
-			<a {href}><P class={`${visibility[href.replace('#', '')]} hover:font-bold`}>{label}</P></a>
+			<a {href}><P class={` hover:font-bold`}>{label}</P></a>
 		</li>
 	{/each}
 </ul>
