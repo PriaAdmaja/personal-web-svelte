@@ -55,4 +55,4 @@ body {
 
 p, h1 {
   @apply text-text-light dark:text-text-dark
-},
+}
