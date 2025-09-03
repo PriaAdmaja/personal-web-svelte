@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-work-sans text-text-light md:px-12 md:py-16 lg:py-0"
+	class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-work-sans md:px-12 md:py-16 lg:py-0"
 >
 	<section class="lg:flex lg:justify-between lg:gap-4">
 		<Header />

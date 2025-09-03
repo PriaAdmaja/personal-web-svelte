@@ -20,7 +20,7 @@
   --color-text-light: #444452;
   --color-text-dark: #e7e7e7;
 
-  --color-bg-light: #171c28;
+  --color-bg-light: #fcfcfc;
   --color-bg-dark: #171c28;
 
   --color-accent: #007bff;
@@ -48,3 +48,11 @@
     display: none;
   }
 }
+
+body {
+  @apply bg-bg-light dark:bg-bg-dark
+}
+
+p, h1 {
+  @apply text-text-light dark:text-text-dark
+},
