@@ -9,39 +9,25 @@
 		{ label: 'PROJECT', href: '#project' }
 	];
 
-	const ids = menuList.map((item) => item.href.replace('#', ''));
-
-	function scrollToHash() {
-		const { hash } = window.location;
-
-		if (hash === '#about') {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-			return;
+	const selectMenu = (href: string) => {
+		const id = href.replace('#', '');
+		const node = document.getElementById(id);
+		if (node) {
+			node.scrollIntoView({ behavior: 'smooth', block: 'center' });
 		}
-
-		if (hash) {
-			const el = document.querySelector(hash);
-			if (el) {
-				el.scrollIntoView({ behavior: 'smooth' });
-			}
-		}
-	}
-
-	onMount(() => {
-		// Scroll if hash exists on first render
-		scrollToHash();
-
-		// Also scroll after client-side navigations
-		afterNavigate(() => {
-			scrollToHash();
-		});
-	});
+	};
 </script>
 
 <ul class="mt-14 hidden flex-col gap-5 lg:flex">
 	{#each menuList as { href, label }}
 		<li>
-			<a {href}><P class={` hover:font-bold`}>{label}</P></a>
+			<button
+				type="button"
+				class="m-0 cursor-pointer border-none bg-transparent p-0"
+				on:click={() => selectMenu(href)}
+			>
+				<P class={` hover:font-bold`}>{label}</P>
+			</button>
 		</li>
 	{/each}
 </ul>
