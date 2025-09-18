@@ -6,14 +6,14 @@
 	const menuList = [
 		{ label: 'ABOUT', href: '#about' },
 		{ label: 'EXPERIENCE', href: '#experience' },
-		{ label: 'PROJECT', href: '#project' }
+		{ label: 'PROJECT', href: '#projects' }
 	];
 
 	const selectMenu = (href: string) => {
 		const id = href.replace('#', '');
 		const node = document.getElementById(id);
 		if (node) {
-			node.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			node.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		}
 	};
 </script>

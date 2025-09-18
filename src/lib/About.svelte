@@ -1,16 +1,42 @@
 <script>
 	import { P } from 'flowbite-svelte';
+	import ExternalLink from './ExternalLink.svelte';
 </script>
 
-<section id="about">
+<section>
 	<div class="sticky top-0 z-30 w-screen lg:hidden">
-		<P class='font-bold text'>About</P>
+		<P class="text font-bold">About</P>
 	</div>
-	<P class="text-base text-pretty"
-		>I'm a frontend developer with a strong foundation in JavaScript, TypeScript, React.js, and
-		Next.js, and additional experience with React Native, Node.js, Express.js, and PostgreSQL.
-		Coming from a background in agriculture, I bring a unique perspective to problem-solving and
-		adaptability. I'm passionate about building scalable web applications and continuously learning
-		while applying the latest tools and best practices in tech.</P
-	>
+	<div class="space-y-4">
+		<P class="text-base text-pretty"
+			>I’m a Frontend Engineer with a strong focus on building modern, scalable, and user-centric
+			web applications. My expertise lies in <ExternalLink href="https://react.dev/"
+				><strong>React</strong></ExternalLink
+			>, <ExternalLink href="https://nextjs.org/"><strong>Next.js</strong></ExternalLink>, and <ExternalLink
+				href="https://www.typescriptlang.org/"><strong>TypeScript</strong></ExternalLink
+			>, and I enjoy turning complex ideas into intuitive digital experiences.
+		</P>
+		<P class="text-base text-pretty"
+			>I have hands-on experience with a wide range of technologies and libraries, including
+			<ExternalLink href="https://tailwindcss.com/"><strong>Tailwind CSS</strong></ExternalLink>,
+			<ExternalLink href="https://ant.design/"><strong>Ant Design</strong></ExternalLink>,
+			<ExternalLink href="https://mui.com/"><strong>Material UI</strong></ExternalLink>,
+			<ExternalLink href="https://tanstack.com/"
+				><strong>TanStack React Query & Table</strong></ExternalLink
+			>, <ExternalLink href="https://dndkit.com/"><strong>dnd-kit</strong></ExternalLink>, and
+			<ExternalLink href="https://auth0.com/"><strong>Auth0</strong></ExternalLink>. I’m also
+			comfortable working with backend integrations and development workflows, using
+			<ExternalLink href="https://expressjs.com/"><strong>Express.js</strong></ExternalLink> and
+			<ExternalLink href="https://www.docker.com/"><strong>Docker Compose</strong></ExternalLink>.
+		</P>
+		<P class="text-base text-pretty">
+			What drives me is the challenge of solving real-world problems through code. I believe that
+			great software is not just functional—it should be efficient, accessible, and delightful to
+			use.
+		</P>
+		<P class="text-base text-pretty">
+			Outside of work, I like to keep an active lifestyle—jogging in the morning helps me stay
+			energized and maintain focus throughout the day.</P
+		>
+	</div>
 </section>

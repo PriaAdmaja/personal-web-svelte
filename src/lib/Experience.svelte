@@ -14,21 +14,31 @@
 		{
 			companyName: 'PT. Inovasi Bisnis Berteknologi',
 			date: 'October 2024 - Now',
-			description: '',
+			description:
+				'Built and maintained features using Next.js, Tailwind CSS, Material UI, TanStack Query, and TanStack Table. Implemented authentication flow with Auth0, including secure login and session handling. Created reusable components, custom hooks, and utility functions to streamline development. Collaborated with backend engineers to integrate APIs and align frontend with system architecture. Handled frontend deployment, ensuring stable releases and smooth delivery to production.',
 			location: 'Malang, East Java, Indonesia',
-			tech: ['Next JS', 'Tailwind', 'Material UI', 'React Hook Form', 'Tanstack React Query']
+			tech: [
+				'Next.js',
+				'Tailwind',
+				'Material UI',
+				'React Hook Form',
+				'Tanstack React Query',
+				'Auth0',
+				'Cloudflare'
+			]
 		},
 		{
 			companyName: 'PT. Havedev Cipta Teknologi',
 			date: 'November 2023 - October 2024',
-			description: '',
+			description:
+				'Built an ERP web app by continuing development from an existing codebase. Added new features and improved existing ones using Next.js, Tailwind CSS, Ant Design, React Hook Form, TanStack Query, and TanStack Table. Worked with designers, QA, and project managers to deliver a high-quality product.',
 			location: 'Blitar, East Java, Indonesia',
-			tech: ['Next JS', 'Tailwind', 'Ant Design', 'React Hook Form', 'Tanstack React Query']
+			tech: ['Next.js', 'Tailwind', 'Ant Design', 'React Hook Form', 'Tanstack React Query']
 		}
 	];
 </script>
 
-<Timeline order="vertical" id="experience" class='ml-3'>
+<Timeline order="vertical" class="ml-3">
 	{#each timeline as { companyName, date, description, tech }}
 		<TimelineItem title={companyName} {date}>
 			{#snippet orientationSlot()}
@@ -38,7 +48,7 @@
 					<CalendarWeekSolid class="h-4 w-4 " />
 				</span>
 			{/snippet}
-			<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+			<p class="my-4 text-base font-normal text-pretty text-gray-500 dark:text-gray-400">
 				{description}
 			</p>
 			<div class="flex flex-wrap items-center gap-2">
