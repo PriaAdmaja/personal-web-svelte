@@ -39,7 +39,7 @@
 </script>
 
 <section>
-	<div class="sticky top-0 z-30 w-full bg-bg-light py-4 backdrop-blur-sm lg:hidden dark:bg-bg-dark">
+	<div class="sticky top-0 z-30 w-full bg-bg-light text-accent py-4 backdrop-blur-sm lg:hidden dark:bg-bg-dark">
 		<P class="text-lg font-bold">Experience</P>
 	</div>
 	<Timeline order="vertical" class="ml-3">

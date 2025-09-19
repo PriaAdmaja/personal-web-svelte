@@ -12,7 +12,7 @@
 	<section class="lg:flex lg:justify-between lg:gap-4">
 		<Header />
 
-		<section class="pb-20 lg:w-[60%]">
+		<section class="lg:pb-20 lg:w-[60%]">
 			<div id="about" class="pt-20">
 				<About />
 			</div>
