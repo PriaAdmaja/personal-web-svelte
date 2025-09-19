@@ -1,5 +1,5 @@
 <script>
-	import { DarkMode, P } from 'flowbite-svelte';
+	import { P } from 'flowbite-svelte';
 	import MenuList from './MenuList.svelte';
 	import { GithubSolid, LinkedinSolid, WhatsappSolid } from 'flowbite-svelte-icons';
 </script>
@@ -28,5 +28,4 @@
 			<WhatsappSolid class="size-6 " />
 		</a>
 	</div>
-	<DarkMode />
 </header>

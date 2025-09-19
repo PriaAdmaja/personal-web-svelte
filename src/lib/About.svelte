@@ -4,8 +4,8 @@
 </script>
 
 <section>
-	<div class="sticky top-0 z-30 w-screen lg:hidden">
-		<P class="text font-bold">About</P>
+	<div class="sticky top-0 z-30 w-full lg:hidden py-4 bg-bg-light dark:bg-bg-dark backdrop-blur-sm">
+		<P class="text-lg font-bold">About</P>
 	</div>
 	<div class="space-y-4">
 		<P class="text-base text-pretty"
