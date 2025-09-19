@@ -18,11 +18,12 @@
 	--color-primary-900: #a5371b;
 
 	--color-text-light: #444452;
-	--color-text-light-secondary: #64748b;
-	--color-text-dark: #ffffff;
+	--color-text-light-secondary: #444452;
+	--color-text-dark: #afafbf;
+	--color-text-dark-secondary: #e7e7e7;
 
 	--color-bg-light: #fcfcfc;
-	--color-bg-dark: #0a0a0a;
+	--color-bg-dark: #171c28;
 
 	--color-accent: #007bff;
 
@@ -37,7 +38,7 @@
 	--color-secondary-800: #075985;
 	--color-secondary-900: #0c4a6e;
 
-  --font-figtree: 'Figtree', sans-serif;
+	--font-figtree: 'Figtree', sans-serif;
 }
 
 @source "../node_modules/flowbite-svelte/dist";
@@ -54,11 +55,15 @@ body {
 	@apply bg-bg-light dark:bg-bg-dark;
 }
 
-p,
+p {
+	@apply text-text-light dark:text-text-dark;
+}
+
+strong,
 h1,
 h2,
 h3,
 h4,
 h5 {
-	@apply text-text-light dark:text-text-dark;
+	@apply text-text-light-secondary dark:text-text-dark-secondary;
 }

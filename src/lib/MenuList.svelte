@@ -26,7 +26,7 @@
 				class="m-0 cursor-pointer border-none bg-transparent p-0"
 				on:click={() => selectMenu(href)}
 			>
-				<P class={` hover:font-bold`}>{label}</P>
+				<P>{label}</P>
 			</button>
 		</li>
 	{/each}

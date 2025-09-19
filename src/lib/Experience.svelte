@@ -57,7 +57,7 @@
 				</p>
 				<div class="flex flex-wrap items-center gap-2">
 					{#each tech as techItem}
-						<Badge rounded color="gray" large>{techItem}</Badge>
+						<Badge color="blue" border large>{techItem}</Badge>
 					{/each}
 				</div>
 			</TimelineItem>
@@ -65,7 +65,8 @@
 	</Timeline>
 	<Button
 		size="sm"
-		color="light"
+		outline
+		color="gray"
 		class="group flex w-fit cursor-pointer gap-2"
 		href="/resume.pdf"
 		target="_blank"
