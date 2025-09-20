@@ -33,7 +33,7 @@
 <ul class="mt-14 hidden flex-col gap-2 lg:flex">
 	{#each menuList as { href, label }}
 		<li>
-			<a {href} class="group flex items-center py-2">
+			<a {href} class="group flex items-center py-2 w-fit">
 				<span
 					class={` ${currentHash === href ? 'w-20 border-t-accent' : 'border-t-text-light-secondary dark:border-t-text-dark-secondary'} mr-4 w-10 border-t-[2.5px] transition-all duration-75 ease-linear group-hover:w-20 group-focus-visible:w-20  `}
 				></span>
