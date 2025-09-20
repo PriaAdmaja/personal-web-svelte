@@ -30,7 +30,7 @@
 			<section class="flex flex-col gap-5 sm:flex-row">
 				<ThumbnailPreview alt={name} src={image} />
 				<div>
-					<h2 class=" mb-2 text-lg font-bold text-pretty text-gray-900 dark:text-white">
+					<h2 class="mb-2 w-fit text-lg font-bold text-pretty text-gray-900 dark:text-white">
 						<a
 							href={url}
 							target="_blank"
@@ -38,7 +38,7 @@
 							class="group flex items-center gap-2"
 						>
 							<span
-								class="relative w-fit font-bold after:absolute after:bottom-0 after:left-0 after:-z-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 hover:after:scale-x-100"
+								class="relative w-fit font-bold after:absolute after:bottom-0 after:left-0 after:-z-1 after:border-b-[2.5px] after:w-full after:origin-left after:scale-x-0 after:border-b-accent after:transition-transform after:duration-300 group-hover:after:scale-x-100"
 							>
 								{name}
 							</span>

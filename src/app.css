@@ -67,3 +67,7 @@ h4,
 h5 {
 	@apply text-text-light-secondary dark:text-text-dark-secondary;
 }
+
+html {
+  scroll-behavior: smooth;
+}
