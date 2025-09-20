@@ -12,17 +12,17 @@
 	<section class="lg:flex lg:justify-between lg:gap-4">
 		<Header />
 
-		<section class="lg:pb-20 lg:w-[60%]">
-			<div id="about" class="pt-20">
+		<section class="lg:w-[60%] lg:pb-20">
+			<div id="about" class="pt-10 lg:pt-20">
 				<About />
 			</div>
-			<div id="experience" class="pt-20">
+			<div id="experience" class="pt-10 lg:pt-20">
 				<Experience />
 			</div>
-			<div id="experience" class="pt-20">
+			<div id="experience" class="pt-10 lg:pt-20">
 				<Projects />
 			</div>
-			<div class="pt-20">
+			<div class="pt-14 lg:pt-20">
 				<Footer />
 			</div>
 		</section>
