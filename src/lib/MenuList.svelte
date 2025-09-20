@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 
 	const menuList = [
@@ -17,12 +18,15 @@
 		// set awal
 		updateHash();
 
-		// listen perubahan hash
 		window.addEventListener('hashchange', updateHash);
 
 		return () => {
 			window.removeEventListener('hashchange', updateHash);
 		};
+	});
+
+	afterNavigate(() => {
+		updateHash(); // setiap kali pindah halaman / klik link
 	});
 </script>
 
