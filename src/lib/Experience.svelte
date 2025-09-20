@@ -12,7 +12,7 @@
 
 	const timeline: TimelineType[] = [
 		{
-			companyName: 'PT. Inovasi Bisnis Berteknologi',
+			companyName: 'Inovasi Bisnis Berteknologi',
 			date: 'October 2024 - Now',
 			description:
 				'Built and maintained features using Next.js, Tailwind CSS, Material UI, TanStack Query, and TanStack Table. Implemented authentication flow with Auth0, including secure login and session handling. Created reusable components, custom hooks, and utility functions to streamline development. Collaborated with backend engineers to integrate APIs and align frontend with system architecture. Handled frontend deployment, ensuring stable releases and smooth delivery to production.',
@@ -28,7 +28,7 @@
 			]
 		},
 		{
-			companyName: 'PT. Havedev Cipta Teknologi',
+			companyName: 'Havedev Cipta Teknologi',
 			date: 'November 2023 - October 2024',
 			description:
 				'Built an ERP web app by continuing development from an existing codebase. Added new features and improved existing ones using Next.js, Tailwind CSS, Ant Design, React Hook Form, TanStack Query, and TanStack Table. Worked with designers, QA, and project managers to deliver a high-quality product.',
