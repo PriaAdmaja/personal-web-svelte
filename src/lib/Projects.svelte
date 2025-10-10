@@ -2,6 +2,7 @@
 	import { P } from 'flowbite-svelte';
 	import ThumbnailPreview from './ThumbnailPreview.svelte';
 	import { ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
+	import SectionHeader from './SectionHeader.svelte';
 
 	const projects = [
 		{
@@ -22,10 +23,8 @@
 </script>
 
 <section id="projects">
-	<div class="sticky top-0 z-30 w-full bg-bg-light py-4 backdrop-blur-sm lg:hidden dark:bg-bg-dark">
-		<P class="text-lg font-bold">Projects</P>
-	</div>
-	<div class="space-y-8">
+	<SectionHeader>Projects</SectionHeader>
+	<div class="space-y-8 px-6 md:px-12 lg:px-0">
 		{#each projects as { name, description, image, url }}
 			<section class="flex flex-col gap-5 sm:flex-row">
 				<ThumbnailPreview alt={name} src={image} />
@@ -38,7 +37,7 @@
 							class="group flex items-center gap-2"
 						>
 							<span
-								class="relative w-fit font-bold after:absolute after:bottom-0 after:left-0 after:-z-1 after:border-b-[2.5px] after:w-full after:origin-left after:scale-x-0 after:border-b-accent after:transition-transform after:duration-300 group-hover:after:scale-x-100"
+								class="relative w-fit font-bold after:absolute after:bottom-0 after:left-0 after:-z-1 after:w-full after:origin-left after:scale-x-0 after:border-b-[2.5px] after:border-b-accent after:transition-transform after:duration-300 group-hover:after:scale-x-100"
 							>
 								{name}
 							</span>

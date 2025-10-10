@@ -1,13 +1,12 @@
 <script>
 	import { P } from 'flowbite-svelte';
 	import ExternalLink from './ExternalLink.svelte';
+	import SectionHeader from './SectionHeader.svelte';
 </script>
 
 <section>
-	<div class="sticky top-0 z-30 w-full lg:hidden py-4 bg-bg-light dark:bg-bg-dark backdrop-blur-sm">
-		<P class="text-lg font-bold">About</P>
-	</div>
-	<div class="space-y-4">
+	<SectionHeader>About</SectionHeader>
+	<div class="space-y-4 px-6 md:px-12 lg:px-0">
 		<P class="text-base text-pretty"
 			>I’m a Frontend Engineer with a strong focus on building modern, scalable, and user-centric
 			web applications. My expertise lies in <ExternalLink href="https://react.dev/"

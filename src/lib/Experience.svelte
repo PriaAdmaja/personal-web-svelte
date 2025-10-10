@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Badge, Button, P, Timeline, TimelineItem } from 'flowbite-svelte';
 	import { ArrowRightOutline, CalendarWeekSolid } from 'flowbite-svelte-icons';
+	import SectionHeader from './SectionHeader.svelte';
 
 	type TimelineType = {
 		companyName: string;
@@ -39,40 +40,40 @@
 </script>
 
 <section>
-	<div class="sticky top-0 z-30 w-full bg-bg-light text-accent py-4 backdrop-blur-sm lg:hidden dark:bg-bg-dark">
-		<P class="text-lg font-bold">Experience</P>
-	</div>
-	<Timeline order="vertical" class="ml-3">
-		{#each timeline as { companyName, date, description, tech }}
-			<TimelineItem title={companyName} {date}>
-				{#snippet orientationSlot()}
-					<span
-						class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-zinc-200 ring-white"
-					>
-						<CalendarWeekSolid class="h-4 w-4 " />
-					</span>
-				{/snippet}
-				<p class="my-4 text-base font-normal text-pretty text-gray-500 dark:text-gray-400">
-					{description}
-				</p>
-				<div class="flex flex-wrap items-center gap-2">
-					{#each tech as techItem}
-						<Badge color="blue" border large>{techItem}</Badge>
-					{/each}
-				</div>
-			</TimelineItem>
-		{/each}
-	</Timeline>
-	<Button
-		size="sm"
-		outline
-		color="gray"
-		class="group flex w-fit cursor-pointer gap-2"
-		href="/resume.pdf"
-		target="_blank"
-		><span>View Full Resume</span>
-		<ArrowRightOutline
-			class="transition-transform duration-200 ease-linear group-hover:translate-x-1"
-		/></Button
-	>
+	<SectionHeader>Experience</SectionHeader>
+	<section class="px-6 md:px-12 lg:px-0">
+		<Timeline order="vertical" class="ml-3 ">
+			{#each timeline as { companyName, date, description, tech }}
+				<TimelineItem title={companyName} {date}>
+					{#snippet orientationSlot()}
+						<span
+							class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-zinc-200 ring-white"
+						>
+							<CalendarWeekSolid class="h-4 w-4 " />
+						</span>
+					{/snippet}
+					<p class="my-4 text-base font-normal text-pretty text-gray-500 dark:text-gray-400">
+						{description}
+					</p>
+					<div class="flex flex-wrap items-center gap-2">
+						{#each tech as techItem}
+							<Badge color="blue" border large>{techItem}</Badge>
+						{/each}
+					</div>
+				</TimelineItem>
+			{/each}
+		</Timeline>
+		<Button
+			size="sm"
+			outline
+			color="gray"
+			class="group flex w-fit cursor-pointer gap-2"
+			href="/resume.pdf"
+			target="_blank"
+			><span>View Full Resume</span>
+			<ArrowRightOutline
+				class="transition-transform duration-200 ease-linear group-hover:translate-x-1"
+			/></Button
+		>
+	</section>
 </section>
