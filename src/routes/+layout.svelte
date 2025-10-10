@@ -7,10 +7,6 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} type="image/svg+xml"/>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet"
-	/>
 	<title>Pria Admaja</title>
 	<meta
 		name="description"
