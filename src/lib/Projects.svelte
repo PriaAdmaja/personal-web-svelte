@@ -3,6 +3,7 @@
 	import ThumbnailPreview from './ThumbnailPreview.svelte';
 	import { ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
 	import SectionHeader from './SectionHeader.svelte';
+	import { inView } from '../utils/inView';
 
 	const projects = [
 		{
@@ -22,7 +23,7 @@
 	];
 </script>
 
-<section id="projects">
+<section id="projects" use:inView={"projects"}>
 	<SectionHeader>Projects</SectionHeader>
 	<div class="space-y-8 px-6 md:px-12 lg:px-0">
 		{#each projects as { name, description, image, url }}

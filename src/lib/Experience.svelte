@@ -2,6 +2,7 @@
 	import { Badge, Button, P, Timeline, TimelineItem } from 'flowbite-svelte';
 	import { ArrowRightOutline, CalendarWeekSolid } from 'flowbite-svelte-icons';
 	import SectionHeader from './SectionHeader.svelte';
+	import { inView } from '../utils/inView';
 
 	type TimelineType = {
 		companyName: string;
@@ -39,7 +40,7 @@
 	];
 </script>
 
-<section>
+<section id="experience" use:inView={"experience"}>
 	<SectionHeader>Experience</SectionHeader>
 	<section class="px-6 md:px-12 lg:px-0">
 		<Timeline order="vertical" class="ml-3 ">

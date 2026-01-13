@@ -2,9 +2,10 @@
 	import { P } from 'flowbite-svelte';
 	import ExternalLink from './ExternalLink.svelte';
 	import SectionHeader from './SectionHeader.svelte';
+	import { inView } from '../utils/inView';
 </script>
 
-<section>
+<section id="about" use:inView={"about"}>
 	<SectionHeader>About</SectionHeader>
 	<div class="space-y-4 px-6 md:px-12 lg:px-0">
 		<P class="text-base text-pretty"

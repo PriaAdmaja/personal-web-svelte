@@ -1,0 +1,1 @@
+export const COMPONENT_ID = ['about', 'experience', 'projects', 'footer'] as const;
