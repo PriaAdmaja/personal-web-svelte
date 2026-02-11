@@ -12,7 +12,7 @@
 	];
 
 	let currentHash = '';
-	$: console.log(visibility);
+
 	function updateHash() {
 		currentHash = window.location.hash;
 	}
